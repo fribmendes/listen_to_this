@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+
+cp .env.sample .env
+
+if [[ `uname` -eq "Darwin" ]]; then
+  brew bundle
+fi
+
+bundle install
