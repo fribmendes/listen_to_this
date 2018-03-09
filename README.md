@@ -6,7 +6,7 @@
 
 # Listen To This
 
-I get it. You want to go over to [/r/listentothis](listentothis) but you don't
+I get it. You want to go over to [/r/listentothis][listentothis] but you don't
 want to leave the terminal. Maybe you're lazy. Maybe you can't 'cause you work
 in an open space and your boss is always suspiciously looking over your shoulder
 to see what you are up to.
@@ -26,14 +26,14 @@ cd listen_to_this
 
 Now, let's install some dependencies shall we?
 
-If you are running macOS with [Homebrew](homebrew), all you have to do is to run
+If you are running macOS with [Homebrew][homebrew], all you have to do is to run
 
 ```shell
 bin/setup
 ```
 
-Otherwise, you're going to need to install [`mpv`](mpv) and
-[`youtube-dl`](youtube-dl). Once you install those, you just need to run
+Otherwise, you're going to need to install [`mpv`][mpv] and
+[`youtube-dl`][youtube-dl]. Once you install those, you just need to run
 `bin/setup`. See? Easy.
 
 ## Running
@@ -46,7 +46,7 @@ will do the trick. For now. I'll turn this into something user-friendlier later 
 
 ## Contributing
 
-Feel free to contribute. You can also just [open an issue](issues) if you want
+Feel free to contribute. You can also just [open an issue][issues] if you want
 to. Or make a pull request, whatever you prefer.
 
 Here's one of them TODO lists to help you out if you want to do something.
