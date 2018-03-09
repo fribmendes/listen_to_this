@@ -9,12 +9,8 @@ AllCops:
     - "bin/**/*"
     - "vendor/**/*"
     - "node_modules/**/*"
-    - "Gemfile"
-    - "Brewfile"
+    - "spec/factories.rb"
   TargetRubyVersion: 2.5
-
-Metrics/LineLength:
-  Enabled: false
 
 Layout/AlignParameters:
   EnforcedStyle: with_fixed_indentation
@@ -28,13 +24,23 @@ Layout/MultilineOperationIndentation:
 Layout/MultilineMethodCallIndentation:
   EnforcedStyle: indented
 
+Metrics/BlockLength:
+  Exclude:
+    - spec/**/*.rb
+    - lib/tasks/**/*.rake
+
+Metrics/LineLength:
+  Enabled: false
+
+Naming/FileName:
+  Exclude:
+    - "Gemfile"
+    - "Brewfile"
+
 Naming/PredicateName:
   NamePrefixBlacklist:
     - is_
     - have_
-
-Style/AndOr:
-  EnforcedStyle: conditionals
 
 Style/ClassAndModuleChildren:
   Enabled: false
@@ -42,17 +48,20 @@ Style/ClassAndModuleChildren:
 Style/Documentation:
   Enabled: false
 
-Style/IfUnlessModifier:
+Style/FrozenStringLiteralComment:
   Enabled: false
 
-Style/StringLiterals:
-  EnforcedStyle: double_quotes
+Style/IfUnlessModifier:
+  Enabled: false
 
 Style/NumericLiterals:
   Enabled: false
 
 Style/SingleLineBlockParams:
   Enabled: false
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
 
 Style/TrailingCommaInArguments:
   EnforcedStyleForMultiline: comma
@@ -62,18 +71,3 @@ Style/TrailingCommaInArrayLiteral:
 
 Style/TrailingCommaInHashLiteral:
   EnforcedStyleForMultiline: comma
-
-Style/FrozenStringLiteralComment:
-  Enabled: false
-
-Style/Lambda:
-  EnforcedStyle: literal
-
-Metrics/BlockLength:
-  Exclude:
-    - spec/**/*.rb
-    - lib/tasks/**/*.rake
-
-Lint/AmbiguousBlockAssociation:
-  Exclude:
-    - spec/**/*.rb

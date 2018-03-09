@@ -1,2 +1,2 @@
-brew 'mpv'
-brew 'youtube-dl'
+brew "mpv"
+brew "youtube-dl"
